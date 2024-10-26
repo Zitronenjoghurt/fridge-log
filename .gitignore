@@ -1,0 +1,9 @@
+*.db
+*.py[cod]
+.env.prod
+.idea
+.venv
+.web
+__pycache__/
+assets/external/
+node_modules
