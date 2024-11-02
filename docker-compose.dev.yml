@@ -7,11 +7,7 @@ services:
       - .env.dev
     volumes:
       # Hot reload for development
-      - ./src:/app
-      # Don't sync node_modules and other build artifacts
-      - /app/node_modules
-      - /app/.web
-      - /app/__pycache__
+      - ./src:/src
     ports:
       - "3000:3000"  # Frontend
       - "8000:8000"  # Backend

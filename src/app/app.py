@@ -1,5 +1,8 @@
 import reflex as rx
 
+from .models.user import User
+
+
 class State(rx.State):
     count: int = 0
 
@@ -10,6 +13,7 @@ class State(rx.State):
         self.count -= 1
 
 def index():
+    test = User(username="test")
     return rx.center(
         rx.vstack(
             rx.heading("Welcome to Reflex!"),
